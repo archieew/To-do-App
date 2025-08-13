@@ -11,5 +11,6 @@ const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
 const taskData = [];
-
 let currentTask = {};
+
+openTaskFormBtn.addEventListener("click",() => taskForm.classList.toggle("hidden"))
