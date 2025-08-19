@@ -40,7 +40,9 @@ taskForm.addEventListener("submit", (e) => {
     description: descriptionInput.value,
   };
 
-  if(dataArrIndex === -1){
-    taskData.unshift(taskObj)
+  if (dataArrIndex === -1) {
+    taskData.unshift(taskObj);
   }
+
+  taskData.forEach(({id, title, date, description}) =>{})
 });
