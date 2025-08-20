@@ -18,7 +18,7 @@ const reset = () => {
   dateInput.value = "";
   descriptionInput.value = "";
   taskForm.classList.toggle("hidden");
-  currentTask = {}
+  currentTask = {};
 }
 
 openTaskFormBtn.addEventListener("click", () =>
@@ -63,8 +63,8 @@ taskForm.addEventListener("submit", (e) => {
           <button type="button" class="btn">Delete</button>
         </div>
       `
-    }
+    }   
   );
 
-  taskForm.classList.toggle("hidden");
+reset()
 });
