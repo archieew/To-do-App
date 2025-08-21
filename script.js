@@ -24,7 +24,11 @@ const addOrUpdateTask = () => {
 
   if (dataArrIndex === -1) {
     taskData.unshift(taskObj);
+
+  }else {
+    taskData[dataArrIndex]= taskObj
   }
+
 
   updateTaskContainer()
   reset()
@@ -70,8 +74,8 @@ const editTask = (buttonEl) => {
   descriptionInput.value = currentTask.description;
 
   addOrUpdateTaskBtn.innerText = "Update Task";
-  taskForm.classList.toggle("hidden")
-  
+
+  taskForm.classList.toggle("hidden");  
 }
 
 const reset = () => {
